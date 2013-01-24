@@ -62,6 +62,11 @@ function GoogleSiteSearch( $t, $out, $term ) {
 	global $wgGoogleSiteSearchCSEID;
 	global $wgGoogleSiteSearchOnly;
 
+	# Return immediately if no search term was supplied
+	if ( !$term ) {
+		return true;
+	}
+
 	$dir = dirname( __FILE__ ) . '/';
 	$lang = $t->getLang();
 
