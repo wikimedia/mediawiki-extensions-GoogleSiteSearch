@@ -62,6 +62,11 @@ function GoogleSiteSearch( $t, $out, $term ) {
 	global $wgGoogleSiteSearchCSEID;
 	global $wgGoogleSiteSearchOnly;
 
+	# Return immediately if the CSE ID is not configured
+	if ( !$wgGoogleSiteSearchCSEID ) {
+		return true;
+	}
+
 	# Return immediately if no search term was supplied
 	if ( !$term ) {
 		return true;
