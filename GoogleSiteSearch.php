@@ -37,7 +37,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'GoogleSiteSearch',
 	'author' => 'Ryan Finnie',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:GoogleSiteSearch',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:GoogleSiteSearch',
 	'descriptionmsg' => 'googlesitesearch-desc',
 	'version' => '2.0',
 );
