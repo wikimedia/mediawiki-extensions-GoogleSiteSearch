@@ -31,16 +31,27 @@ $messages['qqq'] = array(
  * @author Metalhead64
  */
 $messages['de'] = array(
-	'googlesitesearch-desc' => 'Ergänzt zu den Wiki-Suchergebnissen die benutzerdefinierte Google-Websitesuche',
+	'googlesitesearch-desc' => 'Ergänzt zu den Wiki-Suchergebnissen die [//www.google.com/cse/manage/all benutzerdefinierte Google-Websitesuche]',
 	'googlesitesearch-loading' => 'Lade …',
 	'googlesitesearch-google-results' => 'Ergebnisse der Google-Website',
 	'googlesitesearch-wiki-results' => 'Wikiergebnisse',
+);
+
+/** Lower Sorbian (dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'googlesitesearch-desc' => 'Pśidawa wuslědkam wikipytanja [//www.google.com/cse/manage/all Google-pytanje na swójskem websedle]',
+	'googlesitesearch-loading' => 'Zacytujo se...',
+	'googlesitesearch-google-results' => 'Wuslědki Google-sedła',
+	'googlesitesearch-wiki-results' => 'Wikiwuslědki',
 );
 
 /** French (français)
  * @author Gomoko
  */
 $messages['fr'] = array(
+	'googlesitesearch-desc' => 'Ajoute [//www.google.com/cse/manage/all la recherche de site CSE de Google] aux résultats de la recherche du wiki',
 	'googlesitesearch-loading' => 'Chargement…',
 	'googlesitesearch-google-results' => 'Résultats du site de Google',
 	'googlesitesearch-wiki-results' => 'Résultats du wiki',
@@ -50,10 +61,30 @@ $messages['fr'] = array(
  * @author Toliño
  */
 $messages['gl'] = array(
-	'googlesitesearch-desc' => 'Engade a procura de sitio CSE do Google aos resultados da procura no wiki',
+	'googlesitesearch-desc' => 'Engade a [//www.google.com/cse/manage/all procura de sitio CSE do Google] aos resultados da procura no wiki',
 	'googlesitesearch-loading' => 'Cargando...',
 	'googlesitesearch-google-results' => 'Resultados de sitio do Google',
 	'googlesitesearch-wiki-results' => 'Resultados do wiki',
+);
+
+/** Upper Sorbian (hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'googlesitesearch-desc' => 'Přidawa wuslědkam wikipytanja [//www.google.com/cse/manage/all Google-pytanje na swójskim websydle]',
+	'googlesitesearch-loading' => 'Začituje so...',
+	'googlesitesearch-google-results' => 'Wuslědki Google-sydła',
+	'googlesitesearch-wiki-results' => 'Wikiwuslědki',
+);
+
+/** Italian (italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'googlesitesearch-desc' => 'Aggiunge [//www.google.com/cse/manage/all la ricerca sul sito da Google CSE] ai risultati di ricerca di wiki',
+	'googlesitesearch-loading' => 'Caricamento...',
+	'googlesitesearch-google-results' => 'Risultati del sito da Google',
+	'googlesitesearch-wiki-results' => 'Risultati da Wiki',
 );
 
 /** Japanese (日本語)
@@ -63,4 +94,33 @@ $messages['ja'] = array(
 	'googlesitesearch-loading' => '読み込み中...',
 	'googlesitesearch-google-results' => 'Google サイト検索の結果',
 	'googlesitesearch-wiki-results' => 'ウィキ検索の結果',
+);
+
+/** Macedonian (македонски)
+ * @author Bjankuloski06
+ */
+$messages['mk'] = array(
+	'googlesitesearch-desc' => 'Додава [//www.google.com/cse/manage/all прилагодено пребарување со Google] во вики',
+	'googlesitesearch-loading' => 'Вчитувам...',
+	'googlesitesearch-google-results' => 'Резултати од прилагоденото пребарување со Google',
+	'googlesitesearch-wiki-results' => 'Резултати од викито',
+);
+
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'googlesitesearch-desc' => 'Voegt [//www.google.com/cse/manage/all Google CSE site search] toe aan de zoekresultaten van de wiki',
+	'googlesitesearch-loading' => 'Bezig met laden…',
+	'googlesitesearch-google-results' => 'Siteresultaten van Google',
+	'googlesitesearch-wiki-results' => 'Wikiresultaten',
+);
+
+/** Pashto (پښتو)
+ * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ */
+$messages['ps'] = array(
+	'googlesitesearch-loading' => 'برسېرېدنې کې دی...',
+	'googlesitesearch-google-results' => 'د ګووګل وېبځي پايلې',
+	'googlesitesearch-wiki-results' => 'ويکي پايلې',
 );
