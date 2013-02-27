@@ -27,6 +27,15 @@ $messages['qqq'] = array(
 	'googlesitesearch-wiki-results' => 'The title sub-header for the MediaWiki search results section.',
 );
 
+/** Breton (brezhoneg)
+ * @author Y-M D
+ */
+$messages['br'] = array(
+	'googlesitesearch-loading' => 'O kargañ...',
+	'googlesitesearch-google-results' => "Disoc'hoù lec'hienn Google",
+	'googlesitesearch-wiki-results' => "Disoc'hoù ar wiki",
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  */
