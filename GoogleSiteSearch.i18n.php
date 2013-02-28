@@ -20,7 +20,8 @@ $messages['en'] = array(
  * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'googlesitesearch-desc' => '{{desc|name=Google Site Search|url=http://www.mediawiki.org/wiki/Extension:GoogleSiteSearch}}',
+	'googlesitesearch-desc' => '{{desc|name=Google Site Search|url=http://www.mediawiki.org/wiki/Extension:GoogleSiteSearch}}
+"Google CSE" stands for "Google Custom Search Engine".',
 	'googlesitesearch-loading' => 'Displayed before the Google CSE JavaScript replaces it with the actual search results.  Wiki markup is not allowed here; message will be converted to escaped HTML.
 {{Identical|Loading}}',
 	'googlesitesearch-google-results' => 'The title sub-header for the Google CSE (Custom Search Engine) results section.',
@@ -100,6 +101,7 @@ $messages['it'] = array(
  * @author Shirayuki
  */
 $messages['ja'] = array(
+	'googlesitesearch-desc' => 'ウィキの検索結果に [//www.google.com/cse/manage/all Google CSE サイト検索]を追加する',
 	'googlesitesearch-loading' => '読み込み中...',
 	'googlesitesearch-google-results' => 'Google サイト検索の結果',
 	'googlesitesearch-wiki-results' => 'ウィキ検索の結果',
