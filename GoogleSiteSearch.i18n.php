@@ -135,3 +135,13 @@ $messages['ps'] = array(
 	'googlesitesearch-google-results' => 'د ګووګل وېبځي پايلې',
 	'googlesitesearch-wiki-results' => 'ويکي پايلې',
 );
+
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'googlesitesearch-desc' => "Aggiunge 'na [//www.google.com/cse/manage/all ricerche pe site de Google CSE] a le resultate d'a ricerche de uicchi",
+	'googlesitesearch-loading' => 'Stoche a scareche…',
+	'googlesitesearch-google-results' => 'Resultate de Google',
+	'googlesitesearch-wiki-results' => 'Resultate de Uicchi',
+);
