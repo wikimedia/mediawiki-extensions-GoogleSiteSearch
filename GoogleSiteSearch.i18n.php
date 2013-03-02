@@ -107,6 +107,13 @@ $messages['ja'] = array(
 	'googlesitesearch-wiki-results' => 'ウィキ検索の結果',
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'googlesitesearch-loading' => 'Lueden...',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
