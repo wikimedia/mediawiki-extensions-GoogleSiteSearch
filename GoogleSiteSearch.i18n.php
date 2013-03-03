@@ -152,3 +152,10 @@ $messages['roa-tara'] = array(
 	'googlesitesearch-google-results' => 'Resultate de Google',
 	'googlesitesearch-wiki-results' => 'Resultate de Uicchi',
 );
+
+/** Ukrainian (українська)
+ * @author Base
+ */
+$messages['uk'] = array(
+	'googlesitesearch-loading' => 'Завантаження…',
+);
