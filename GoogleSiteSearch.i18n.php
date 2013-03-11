@@ -107,6 +107,13 @@ $messages['ja'] = array(
 	'googlesitesearch-wiki-results' => 'ウィキ検索の結果',
 );
 
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
+ * @author George Animal
+ */
+$messages['ku-latn'] = array(
+	'googlesitesearch-loading' => 'Tê barkirin...',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
