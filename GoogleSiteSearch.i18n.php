@@ -150,6 +150,16 @@ $messages['ps'] = array(
 	'googlesitesearch-wiki-results' => 'ويکي پايلې',
 );
 
+/** Brazilian Portuguese (português do Brasil)
+ * @author Jaideraf
+ */
+$messages['pt-br'] = array(
+	'googlesitesearch-desc' => 'Adiciona um [//www.google.com/cse/manage/all Google CSE site search] aos resultados de busca do wiki',
+	'googlesitesearch-loading' => 'Carregando...',
+	'googlesitesearch-google-results' => 'Resultados do Google',
+	'googlesitesearch-wiki-results' => 'Resultados do wiki',
+);
+
 /** tarandíne (tarandíne)
  * @author Joetaras
  */
