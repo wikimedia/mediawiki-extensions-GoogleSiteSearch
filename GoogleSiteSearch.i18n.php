@@ -57,6 +57,13 @@ $messages['dsb'] = array(
 	'googlesitesearch-wiki-results' => 'Wikiwuslědki',
 );
 
+/** Finnish (suomi)
+ * @author Silvonen
+ */
+$messages['fi'] = array(
+	'googlesitesearch-loading' => 'Ladataan...',
+);
+
 /** French (français)
  * @author Gomoko
  */
@@ -168,6 +175,16 @@ $messages['roa-tara'] = array(
 	'googlesitesearch-loading' => 'Stoche a scareche…',
 	'googlesitesearch-google-results' => 'Resultate de Google',
 	'googlesitesearch-wiki-results' => 'Resultate de Uicchi',
+);
+
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'googlesitesearch-desc' => 'Nagdaragdag ng [//www.google.com/cse/manage/all paghahanap sa pook na CSE ng Google] sa mga resulta ng paghahanap ng wiki',
+	'googlesitesearch-loading' => 'Ikinakarga...',
+	'googlesitesearch-google-results' => 'Mga resulta sa pook ng Google',
+	'googlesitesearch-wiki-results' => 'Mga resulta sa Wiki',
 );
 
 /** Ukrainian (українська)
