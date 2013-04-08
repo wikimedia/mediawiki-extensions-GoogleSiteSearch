@@ -193,3 +193,10 @@ $messages['tl'] = array(
 $messages['uk'] = array(
 	'googlesitesearch-loading' => 'Завантаження…',
 );
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Kuailong
+ */
+$messages['zh-hans'] = array(
+	'googlesitesearch-loading' => '载入中…',
+);
