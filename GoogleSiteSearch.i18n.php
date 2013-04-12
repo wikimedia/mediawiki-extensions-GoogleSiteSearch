@@ -62,6 +62,7 @@ $messages['dsb'] = array(
  */
 $messages['fi'] = array(
 	'googlesitesearch-loading' => 'Ladataan...',
+	'googlesitesearch-wiki-results' => 'Wikitulokset',
 );
 
 /** French (français)
