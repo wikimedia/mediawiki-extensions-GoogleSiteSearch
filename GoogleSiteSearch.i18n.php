@@ -21,7 +21,7 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'googlesitesearch-desc' => '{{desc|name=Google Site Search|url=http://www.mediawiki.org/wiki/Extension:GoogleSiteSearch}}
-"Google CSE" stands for "Google Custom Search Engine".',
+"Google CSE" stands for "Google Custom Search Engine". Example: https://www.google.com/cse/home?cx=010768530259486146519:twowe4zclqy',
 	'googlesitesearch-loading' => 'Displayed before the Google CSE JavaScript replaces it with the actual search results.  Wiki markup is not allowed here; message will be converted to escaped HTML.
 {{Identical|Loading}}',
 	'googlesitesearch-google-results' => 'The title sub-header for the Google CSE (Custom Search Engine) results section.',
@@ -115,6 +115,13 @@ $messages['ja'] = array(
 	'googlesitesearch-wiki-results' => 'ウィキ検索の結果',
 );
 
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'googlesitesearch-loading' => 'Ben aam Laade{{int:ellipsis}}',
+);
+
 /** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  */
@@ -137,6 +144,12 @@ $messages['mk'] = array(
 	'googlesitesearch-loading' => 'Вчитувам...',
 	'googlesitesearch-google-results' => 'Резултати од прилагоденото пребарување со Google',
 	'googlesitesearch-wiki-results' => 'Резултати од викито',
+);
+
+/** Norwegian Bokmål (norsk bokmål)
+ */
+$messages['nb'] = array(
+	'googlesitesearch-desc' => 'Legger til [//www.google.com/cse/manage/all Google CSE-sidesøk] i wikiens søkeresultater',
 );
 
 /** Dutch (Nederlands)
