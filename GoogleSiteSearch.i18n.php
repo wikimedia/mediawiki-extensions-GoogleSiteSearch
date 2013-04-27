@@ -209,8 +209,12 @@ $messages['uk'] = array(
 );
 
 /** Simplified Chinese (中文（简体）‎)
+ * @author Cwek
  * @author Kuailong
  */
 $messages['zh-hans'] = array(
+	'googlesitesearch-desc' => '将 [//www.google.com/cse/manage/all 谷歌自定义搜索引擎网站搜索] 添加到维基搜索结果',
 	'googlesitesearch-loading' => '载入中…',
+	'googlesitesearch-google-results' => '谷歌搜索结果',
+	'googlesitesearch-wiki-results' => 'Wiki搜索结果',
 );
