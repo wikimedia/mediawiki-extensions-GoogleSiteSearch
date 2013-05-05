@@ -57,6 +57,13 @@ $messages['dsb'] = array(
 	'googlesitesearch-wiki-results' => 'Wikiwuslědki',
 );
 
+/** Spanish (español)
+ * @author Fitoschido
+ */
+$messages['es'] = array(
+	'googlesitesearch-loading' => 'Cargando…',
+);
+
 /** Finnish (suomi)
  * @author Silvonen
  */
