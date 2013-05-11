@@ -141,6 +141,8 @@ $messages['ku-latn'] = array(
  */
 $messages['lb'] = array(
 	'googlesitesearch-loading' => 'Lueden...',
+	'googlesitesearch-google-results' => 'Resultater vu Google',
+	'googlesitesearch-wiki-results' => 'Wiki Resultater',
 );
 
 /** Macedonian (македонски)
