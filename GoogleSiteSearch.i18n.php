@@ -41,7 +41,7 @@ $messages['br'] = array(
  * @author Metalhead64
  */
 $messages['de'] = array(
-	'googlesitesearch-desc' => 'Ergänzt zu den Wiki-Suchergebnissen die [//www.google.com/cse/manage/all benutzerdefinierte Google-Websitesuche]',
+	'googlesitesearch-desc' => 'Fügt den Wiki-Suchergebnissen die Ergbnisse der [//www.google.com/cse/manage/all benutzerdefinierten Google-Websitesuche] hinzu',
 	'googlesitesearch-loading' => 'Lade …',
 	'googlesitesearch-google-results' => 'Ergebnisse der Google-Website',
 	'googlesitesearch-wiki-results' => 'Wikiergebnisse',
@@ -126,7 +126,10 @@ $messages['ja'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
+	'googlesitesearch-desc' => 'Deiht de Äjeepneße vum [//www.google.com/cse/manage/all <i lang="en">Google</i> singem Aanwänder-ßait Dorschsöhke] bei dem Wiki sde singe.',
 	'googlesitesearch-loading' => 'Ben aam Laade{{int:ellipsis}}',
+	'googlesitesearch-google-results' => 'Wat <i lang="en">Google</i> heh jefonge hät:',
+	'googlesitesearch-wiki-results' => 'Wat et Wiki jefonge hät:',
 );
 
 /** Kurdish (Latin script) (Kurdî (latînî)‎)
