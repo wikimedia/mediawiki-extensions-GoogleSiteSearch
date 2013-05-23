@@ -215,9 +215,13 @@ $messages['tl'] = array(
 
 /** Ukrainian (українська)
  * @author Base
+ * @author Ата
  */
 $messages['uk'] = array(
+	'googlesitesearch-desc' => 'Додає [//www.google.com/cse/manage/all Google CSE пошук по сайту] до результатів вікіпошуку',
 	'googlesitesearch-loading' => 'Завантаження…',
+	'googlesitesearch-google-results' => 'Результати Google-пошуку по сайту',
+	'googlesitesearch-wiki-results' => 'Вікірезультати',
 );
 
 /** Simplified Chinese (中文（简体）‎)
