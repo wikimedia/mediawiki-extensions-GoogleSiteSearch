@@ -92,6 +92,13 @@ $messages['gl'] = array(
 	'googlesitesearch-wiki-results' => 'Resultados do wiki',
 );
 
+/** Hebrew (עברית)
+ * @author YaronSh
+ */
+$messages['he'] = array(
+	'googlesitesearch-loading' => 'בטעינה...',
+);
+
 /** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
