@@ -28,6 +28,16 @@ $messages['qqq'] = array(
 	'googlesitesearch-wiki-results' => 'The title sub-header for the MediaWiki search results section.',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'googlesitesearch-desc' => 'Amiesta un [//www.google.com/cse/manage/all motor personalizáu de busca de Google (CSE) nel sitiu] a los resultaos de busca na wiki',
+	'googlesitesearch-loading' => 'Cargando...',
+	'googlesitesearch-google-results' => 'Resultaos del sitiu de Google',
+	'googlesitesearch-wiki-results' => 'Resultaos de la wiki',
+);
+
 /** Breton (brezhoneg)
  * @author Y-M D
  */
@@ -179,6 +189,16 @@ $messages['nl'] = array(
 	'googlesitesearch-loading' => 'Bezig met laden…',
 	'googlesitesearch-google-results' => 'Siteresultaten van Google',
 	'googlesitesearch-wiki-results' => 'Wikiresultaten',
+);
+
+/** Polish (polski)
+ * @author Woytecr
+ */
+$messages['pl'] = array(
+	'googlesitesearch-desc' => 'Dodaje [//www.google.com/cse/manage/all Google CSE site search] do wyników wyszukiwarki wiki',
+	'googlesitesearch-loading' => 'Ładowanie...',
+	'googlesitesearch-google-results' => 'Wyniki Google site',
+	'googlesitesearch-wiki-results' => 'Wyniki wiki',
 );
 
 /** Pashto (پښتو)
