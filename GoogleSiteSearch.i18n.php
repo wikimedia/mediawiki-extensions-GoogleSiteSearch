@@ -261,3 +261,13 @@ $messages['zh-hans'] = array(
 	'googlesitesearch-google-results' => '谷歌搜索结果',
 	'googlesitesearch-wiki-results' => 'Wiki搜索结果',
 );
+
+/** Traditional Chinese (中文（繁體）‎)
+ * @author Justincheng12345
+ */
+$messages['zh-hant'] = array(
+	'googlesitesearch-desc' => '將[//www.google.com/cse/manage/all Google自訂網站搜尋]加入維基搜尋結果',
+	'googlesitesearch-loading' => '載入中…',
+	'googlesitesearch-google-results' => 'Google搜尋結果',
+	'googlesitesearch-wiki-results' => '維基搜尋结果',
+);
