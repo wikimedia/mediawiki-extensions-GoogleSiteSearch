@@ -175,6 +175,14 @@ $messages['mk'] = array(
 	'googlesitesearch-wiki-results' => 'Резултати од викито',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'googlesitesearch-google-results' => 'Hasil carian Google',
+	'googlesitesearch-wiki-results' => 'Hasil carian wiki',
+);
+
 /** Norwegian Bokmål (norsk bokmål)
  */
 $messages['nb'] = array(
