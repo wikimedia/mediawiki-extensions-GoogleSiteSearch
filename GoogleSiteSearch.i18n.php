@@ -179,6 +179,8 @@ $messages['mk'] = array(
  * @author Anakmalaysia
  */
 $messages['ms'] = array(
+	'googlesitesearch-desc' => 'Menambahkan [//www.google.com/cse/manage/all carian Google CSE] pada hasil carian wiki',
+	'googlesitesearch-loading' => 'Sedang dimuatkan...',
 	'googlesitesearch-google-results' => 'Hasil carian Google',
 	'googlesitesearch-wiki-results' => 'Hasil carian wiki',
 );
