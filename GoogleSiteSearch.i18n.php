@@ -240,6 +240,16 @@ $messages['roa-tara'] = array(
 	'googlesitesearch-wiki-results' => 'Resultate de Uicchi',
 );
 
+/** Swedish (svenska)
+ * @author WikiPhoenix
+ */
+$messages['sv'] = array(
+	'googlesitesearch-desc' => 'Lägger till [//www.google.com/cse/manage/all Google CSE-sidsökning] till wikins sökresultat',
+	'googlesitesearch-loading' => 'Läser in...',
+	'googlesitesearch-google-results' => 'Google sidresultat',
+	'googlesitesearch-wiki-results' => 'Wikiresultat',
+);
+
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */
