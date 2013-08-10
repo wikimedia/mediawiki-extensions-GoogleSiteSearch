@@ -139,6 +139,17 @@ $messages['ja'] = array(
 	'googlesitesearch-wiki-results' => 'ウィキ検索の結果',
 );
 
+/** Korean (한국어)
+ * @author Kwj2772
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'googlesitesearch-desc' => '위키 검색 결과에 [//www.google.com/cse/manage/all Google CSE 사이트 검색]을 추가합니다',
+	'googlesitesearch-loading' => '불러오는 중...',
+	'googlesitesearch-google-results' => 'Google 사이트 검색 결과',
+	'googlesitesearch-wiki-results' => '위키 검색 결과',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
