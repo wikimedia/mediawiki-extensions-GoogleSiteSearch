@@ -171,6 +171,7 @@ $messages['ku-latn'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
+	'googlesitesearch-desc' => "Setzt [//www.google.com/cse/manage/all Google CSE site search] bäi d'Resultater vun der Wiki-Sich derbäi",
 	'googlesitesearch-loading' => 'Lueden...',
 	'googlesitesearch-google-results' => 'Resultater vu Google',
 	'googlesitesearch-wiki-results' => 'Wiki Resultater',
