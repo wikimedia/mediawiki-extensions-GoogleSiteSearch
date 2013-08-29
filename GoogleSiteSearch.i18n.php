@@ -167,6 +167,15 @@ $messages['ku-latn'] = array(
 	'googlesitesearch-loading' => 'Tê barkirin...',
 );
 
+/** Kirghiz (Кыргызча)
+ * @author Maksat
+ */
+$messages['ky'] = array(
+	'googlesitesearch-loading' => 'Жүктөлүүдө...',
+	'googlesitesearch-google-results' => 'Google сайтынын жыйынтыктары',
+	'googlesitesearch-wiki-results' => 'Уики жыйынтыктар',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
@@ -211,6 +220,16 @@ $messages['nl'] = array(
 	'googlesitesearch-loading' => 'Bezig met laden…',
 	'googlesitesearch-google-results' => 'Siteresultaten van Google',
 	'googlesitesearch-wiki-results' => 'Wikiresultaten',
+);
+
+/** Occitan (occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'googlesitesearch-desc' => 'Apond [//www.google.com/cse/manage/all la recèrca de site CSE de Google] als resultats de la recèrca del wiki',
+	'googlesitesearch-loading' => 'Cargament...',
+	'googlesitesearch-google-results' => 'Resultats del site de Google',
+	'googlesitesearch-wiki-results' => 'Resultats del wiki',
 );
 
 /** Polish (polski)
