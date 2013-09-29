@@ -271,6 +271,15 @@ $messages['roa-tara'] = array(
 	'googlesitesearch-wiki-results' => 'Resultate de Uicchi',
 );
 
+/** Russian (русский)
+ * @author Okras
+ */
+$messages['ru'] = array(
+	'googlesitesearch-desc' => 'Добавляет [//www.google.com/cse/manage/al Пользовательский поиск Google] к результатам поиска движка проекта',
+	'googlesitesearch-loading' => 'Загрузка…',
+	'googlesitesearch-google-results' => 'Результаты поиска Google',
+);
+
 /** Swedish (svenska)
  * @author WikiPhoenix
  */
