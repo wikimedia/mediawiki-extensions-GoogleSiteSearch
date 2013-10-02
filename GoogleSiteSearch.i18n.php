@@ -257,7 +257,7 @@ $messages['pl'] = array(
  */
 $messages['ps'] = array(
 	'googlesitesearch-loading' => 'برسېرېدنې کې دی...',
-	'googlesitesearch-google-results' => 'د ګووګل وېبځي پايلې',
+	'googlesitesearch-google-results' => 'د گووگل وېبځي پايلې',
 	'googlesitesearch-wiki-results' => 'ويکي پايلې',
 );
 
