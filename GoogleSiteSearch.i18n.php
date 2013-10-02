@@ -119,6 +119,16 @@ $messages['hsb'] = array(
 	'googlesitesearch-wiki-results' => 'Wikiwuslědki',
 );
 
+/** Interlingua (interlingua)
+ * @author McDutchie
+ */
+$messages['ia'] = array(
+	'googlesitesearch-desc' => 'Adde [//www.google.com/cse/manage/all Google CSE site search] al resultatos del recerca wiki',
+	'googlesitesearch-loading' => 'Cargamento…',
+	'googlesitesearch-google-results' => 'Resultatos de sito de Google',
+	'googlesitesearch-wiki-results' => 'Resultatos del wiki',
+);
+
 /** Italian (italiano)
  * @author Beta16
  */
