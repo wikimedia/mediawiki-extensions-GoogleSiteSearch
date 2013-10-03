@@ -288,6 +288,7 @@ $messages['ru'] = array(
 	'googlesitesearch-desc' => 'Добавляет [//www.google.com/cse/manage/al Пользовательский поиск Google] к результатам поиска движка проекта',
 	'googlesitesearch-loading' => 'Загрузка…',
 	'googlesitesearch-google-results' => 'Результаты поиска Google',
+	'googlesitesearch-wiki-results' => 'Результаты вики-поиска',
 );
 
 /** Swedish (svenska)
