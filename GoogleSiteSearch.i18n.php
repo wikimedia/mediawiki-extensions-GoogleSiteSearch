@@ -177,7 +177,7 @@ $messages['ku-latn'] = array(
 	'googlesitesearch-loading' => 'Tê barkirin...',
 );
 
-/** Kirghiz (Кыргызча)
+/** Kyrgyz (Кыргызча)
  * @author Maksat
  */
 $messages['ky'] = array(
