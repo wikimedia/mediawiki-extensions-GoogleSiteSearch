@@ -188,9 +188,10 @@ $messages['ky'] = array(
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
-	'googlesitesearch-desc' => "Setzt [//www.google.com/cse/manage/all Google CSE site search] bäi d'Resultater vun der Wiki-Sich derbäi",
+	'googlesitesearch-desc' => "Setzt [//www.google.com/cse/manage/all Google CSE site search] bei d'Resultater vun der Wiki-Sich derbäi",
 	'googlesitesearch-loading' => 'Lueden...',
 	'googlesitesearch-google-results' => 'Resultater vu Google',
 	'googlesitesearch-wiki-results' => 'Wiki Resultater',
