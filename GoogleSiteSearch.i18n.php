@@ -71,7 +71,10 @@ $messages['dsb'] = array(
  * @author Fitoschido
  */
 $messages['es'] = array(
+	'googlesitesearch-desc' => 'Añade la [//www.google.com/cse/manage/all búsqueda por sitio de Google] a los resultados de búsqueda del wiki',
 	'googlesitesearch-loading' => 'Cargando…',
+	'googlesitesearch-google-results' => 'Resultados de Google para el sitio',
+	'googlesitesearch-wiki-results' => 'Resultados del wiki',
 );
 
 /** Finnish (suomi)
