@@ -95,6 +95,13 @@ $messages['fr'] = array(
 	'googlesitesearch-wiki-results' => 'Résultats du wiki',
 );
 
+/** Western Frisian (Frysk)
+ * @author Kening Aldgilles
+ */
+$messages['fy'] = array(
+	'googlesitesearch-loading' => 'Ynlade...',
+);
+
 /** Galician (galego)
  * @author Toliño
  */
