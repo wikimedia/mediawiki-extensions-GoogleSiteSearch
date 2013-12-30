@@ -77,6 +77,13 @@ $messages['es'] = array(
 	'googlesitesearch-wiki-results' => 'Resultados del wiki',
 );
 
+/** Persian (فارسی)
+ * @author Reza1615
+ */
+$messages['fa'] = array(
+	'googlesitesearch-loading' => 'در حال بارگذاری...',
+);
+
 /** Finnish (suomi)
  * @author Silvonen
  */
