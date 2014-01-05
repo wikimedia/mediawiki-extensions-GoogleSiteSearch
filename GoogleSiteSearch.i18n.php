@@ -78,10 +78,14 @@ $messages['es'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Armin1392
  * @author Reza1615
  */
 $messages['fa'] = array(
+	'googlesitesearch-desc' => 'افزودن [//www.google.com/cse/manage/all Google CSE site search] به نتایج تحقیق ویکی',
 	'googlesitesearch-loading' => 'در حال بارگذاری...',
+	'googlesitesearch-google-results' => 'نتایج سایت گوگل',
+	'googlesitesearch-wiki-results' => 'نتایج ویکی',
 );
 
 /** Finnish (suomi)
