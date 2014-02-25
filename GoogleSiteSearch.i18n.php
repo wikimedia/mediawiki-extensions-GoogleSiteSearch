@@ -125,9 +125,13 @@ $messages['gl'] = array(
 
 /** Hebrew (עברית)
  * @author YaronSh
+ * @author Yona b
  */
 $messages['he'] = array(
+	'googlesitesearch-desc' => 'מוסיף [//www.google.com/cse/manage/all חיפוש באתרי CSE של גוגל] לתוצאות חיפוש ויקי',
 	'googlesitesearch-loading' => 'בטעינה...',
+	'googlesitesearch-google-results' => 'תוצאות אתר גוגל',
+	'googlesitesearch-wiki-results' => 'תוצאות ויקי',
 );
 
 /** Upper Sorbian (hornjoserbsce)
