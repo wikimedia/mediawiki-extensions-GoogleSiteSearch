@@ -317,6 +317,16 @@ $messages['ru'] = array(
 	'googlesitesearch-wiki-results' => 'Результаты вики-поиска',
 );
 
+/** Scots (Scots)
+ * @author John Reid
+ */
+$messages['sco'] = array(
+	'googlesitesearch-desc' => 'Adds [//www.google.com/cse/manage/all Google CSE steid rake] til wiki rake ootcomes',
+	'googlesitesearch-loading' => 'Laidin...',
+	'googlesitesearch-google-results' => 'Google steid ootcomes',
+	'googlesitesearch-wiki-results' => 'Wiki ootcomes',
+);
+
 /** Swedish (svenska)
  * @author WikiPhoenix
  */
