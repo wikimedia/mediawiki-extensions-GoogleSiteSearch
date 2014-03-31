@@ -39,7 +39,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'author' => 'Ryan Finnie',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:GoogleSiteSearch',
 	'descriptionmsg' => 'googlesitesearch-desc',
-	'version' => '2.0',
+	'version' => '2.1.0',
 );
 
 # Default configuration globals
@@ -56,6 +56,7 @@ if ( !isset( $wgGoogleSiteSearchCharset ) ) {
 $dir = dirname( __FILE__ ) . '/';
 
 # Define internationalizations
+$wgMessagesDirs['GoogleSiteSearch'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['GoogleSiteSearch'] = $dir . 'GoogleSiteSearch.i18n.php';
 
 # Hook into SpecialSearchResultsPrepend (MW 1.21+)
