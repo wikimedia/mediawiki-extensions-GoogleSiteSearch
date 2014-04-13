@@ -87,9 +87,9 @@ function GoogleSiteSearch( $t, $out, $term ) {
 	}
 
 	# Replace variable data in the HTML
-	$outhtml = str_replace( '_GSS_CSE_ID_', htmlentities( $wgGoogleSiteSearchCSEID, ENT_QUOTES, $wgGoogleSiteSearchCharset ), $outhtml );
-	$outhtml = str_replace( '_GSS_TERM_ESCAPE_', htmlentities( $term, ENT_QUOTES, $wgGoogleSiteSearchCharset ), $outhtml );
-	$outhtml = str_replace( '_GSS_LANG_', htmlentities( $lang->getCode(), ENT_QUOTES, $wgGoogleSiteSearchCharset ), $outhtml );
+	$outhtml = str_replace( '_GSS_CSE_ID_', FormatJson::encode( $wgGoogleSiteSearchCSEID ), $outhtml );
+	$outhtml = str_replace( '_GSS_TERM_ESCAPE_', FormatJson::encode( $term ), $outhtml );
+	$outhtml = str_replace( '_GSS_LANG_', FormatJson::encode( $lang->getCode() ), $outhtml );
 	$outhtml = str_replace( '_GSS_LOADING_', htmlentities( wfMessage( 'googlesitesearch-loading', $wgGoogleSiteSearchCharset ) ), $outhtml );
 
 	# Add it!
