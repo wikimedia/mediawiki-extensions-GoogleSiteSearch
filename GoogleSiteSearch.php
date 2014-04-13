@@ -65,6 +65,7 @@ $wgHooks['SpecialSearchResultsPrepend'][] = 'GoogleSiteSearch';
 function GoogleSiteSearch( $t, $out, $term ) {
 	global $wgGoogleSiteSearchCSEID;
 	global $wgGoogleSiteSearchOnly;
+	global $wgGoogleSiteSearchCharset;
 
 	# Return immediately if the CSE ID is not configured
 	if ( !$wgGoogleSiteSearchCSEID ) {
