@@ -39,7 +39,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'author' => 'Ryan Finnie',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:GoogleSiteSearch',
 	'descriptionmsg' => 'googlesitesearch-desc',
-	'version' => '2.1.0',
+	'version' => '2.2',
 );
 
 # Default configuration globals
