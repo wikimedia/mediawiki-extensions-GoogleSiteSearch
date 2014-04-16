@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Silvonen"
-        ]
-    },
-    "googlesitesearch-loading": "Ladataan...",
-    "googlesitesearch-wiki-results": "Wikitulokset"
+	"@metadata": {
+		"authors": [
+			"Silvonen"
+		]
+	},
+	"googlesitesearch-loading": "Ladataan...",
+	"googlesitesearch-wiki-results": "Wikitulokset"
 }
