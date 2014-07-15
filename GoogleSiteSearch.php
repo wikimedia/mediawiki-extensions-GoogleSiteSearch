@@ -78,7 +78,7 @@ function GoogleSiteSearch( $t, $out, $term ) {
 	}
 
 	$dir = dirname( __FILE__ ) . '/';
-	$lang = $t->getLang();
+	$lang = $t->getLanguage();
 
 	# Allow for local overrides of the base HTML
 	if ( file_exists( $dir . 'GoogleSiteSearch.content.html' ) ) {
