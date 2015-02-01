@@ -40,6 +40,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url' => 'https://www.mediawiki.org/wiki/Extension:GoogleSiteSearch',
 	'descriptionmsg' => 'googlesitesearch-desc',
 	'version' => '2.2',
+	'license-name' => 'GPL-2.0+',
 );
 
 # Default configuration globals
