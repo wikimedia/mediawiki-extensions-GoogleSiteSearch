@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Subi"
+			"Subi",
+			"An13sa"
 		]
 	},
-	"googlesitesearch-loading": "Kargatzen..."
+	"googlesitesearch-loading": "Kargatzen...",
+	"googlesitesearch-google-results": "Google emaitzak",
+	"googlesitesearch-wiki-results": "Wiki emaitzak"
 }
