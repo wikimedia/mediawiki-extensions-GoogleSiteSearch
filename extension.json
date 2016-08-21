@@ -15,12 +15,12 @@
 		"GoogleSiteSearch": "GoogleSiteSearch.hooks.php"
 	},
 	"Hooks": {
-		"SpecialSearchResultsPrepend": "GoogleSiteSearch::googleSiteSearchPrepend"
+		"SpecialSearchResultsPrepend": "GoogleSiteSearch::searchPrepend"
 	},
 	"config": {
 		"GoogleSiteSearchCSEID": "",
 		"GoogleSiteSearchOnly": false,
-		"GoogleSiteSearchCharset": "UTF-8"
+		"GoogleSiteSearchAttributes": []
 	},
 	"requires": {
 		"MediaWiki": ">= 1.23.0"

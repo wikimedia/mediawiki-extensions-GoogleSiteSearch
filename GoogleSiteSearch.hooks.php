@@ -4,7 +4,7 @@ class GoogleSiteSearch {
 	public static function searchPrepend( $specialSearch, $output, $term ) {
 		global $wgGoogleSiteSearchCSEID;
 		global $wgGoogleSiteSearchOnly;
-		global $wgGoogleSiteSearchCharset;
+		global $wgGoogleSiteSearchAttributes;
 
 		# Return immediately if the CSE ID is not configured
 		if ( !$wgGoogleSiteSearchCSEID ) {
@@ -16,25 +16,38 @@ class GoogleSiteSearch {
 			return true;
 		}
 
-		$dir = dirname( __FILE__ ) . '/';
-		$lang = $specialSearch->getLanguage();
+		# Default attributes, may be overridden by $wgGoogleSiteSearchAttributes.
+		$gcseAttributesDefault = array(
+			'gname' => 'mw-googlesitesearch',
+			'linkTarget' => '',
+		);
 
-		# Allow for local overrides of the base HTML
-		if ( file_exists( $dir . 'GoogleSiteSearch.content.html' ) ) {
-			$outhtml = file_get_contents ( $dir . 'GoogleSiteSearch.content.html' );
-		} else {
-			$outhtml = file_get_contents ( $dir . 'GoogleSiteSearch.content.default.html' );
+		# Attributes which may not be overridden.
+		$gcseAttributesImmutable = array(
+			'autoSearchOnLoad' => 'false',
+		);
+
+		$gcseAttributes = array_merge( $gcseAttributesDefault, $wgGoogleSiteSearchAttributes, $gcseAttributesImmutable );
+
+		# Generate HTML5-compatible <div> attributes.
+		$gcseAttributesDiv = array();
+		foreach ( $gcseAttributes as $key => $value ) {
+			$gcseAttributesDiv['data-' . $key] = $value;
 		}
+		$gcseAttributesDiv['id'] = $gcseAttributes['gname'];
+		$gcseAttributesDiv['class'] = 'gcse-searchresults-only';
 
-		# Replace variable data in the HTML
-		$outhtml = str_replace( '_GSS_CSE_ID_', FormatJson::encode( $wgGoogleSiteSearchCSEID ), $outhtml );
-		$outhtml = str_replace( '_GSS_TERM_ESCAPE_', FormatJson::encode( $term ), $outhtml );
-		$outhtml = str_replace( '_GSS_LANG_', FormatJson::encode( $lang->getCode() ), $outhtml );
-		$outhtml = str_replace( '_GSS_LOADING_', htmlentities( wfMessage( 'googlesitesearch-loading', $wgGoogleSiteSearchCharset ) ), $outhtml );
+		$html = Html::rawElement( 'div', array( 'id' => 'mw-googlesitesearch-container' ),
+			Html::element( 'script', array(), 'var mwGSSCallback = function() { google.search.cse.element.getElement(' . FormatJson::encode( $gcseAttributes['gname'] ) . ').execute(' . FormatJson::encode( $term ) . '); }; window.__gcse = { callback: mwGSSCallback }; (function() { var gcse = document.createElement("script"); gcse.type = "text/javascript"; gcse.async = true; gcse.src = "https://cse.google.com/cse.js?cx=" + ' . FormatJson::encode( $wgGoogleSiteSearchCSEID ) . '; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(gcse, s); })();' )
+			. Html::Element( 'div', $gcseAttributesDiv, wfMessage( 'googlesitesearch-loading' ) )
+		);
+
+		# Allow hook override of HTML
+		Hooks::run( 'GoogleSiteSearchHTML', [ $specialSearch, $term, &$html ] );
 
 		# Add it!
 		$output->addWikiText( '== ' . wfMessage( 'googlesitesearch-google-results' ) . ' ==' );
-		$output->AddHTML( $outhtml );
+		$output->AddHTML( $html );
 
 		# Do not return wiki results if configured that way
 		if ( $wgGoogleSiteSearchOnly ) {

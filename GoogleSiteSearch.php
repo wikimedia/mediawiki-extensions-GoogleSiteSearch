@@ -55,8 +55,8 @@ if ( !isset( $wgGoogleSiteSearchCSEID ) ) {
 if ( !isset( $wgGoogleSiteSearchOnly ) ) {
 	$wgGoogleSiteSearchOnly = false;
 }
-if ( !isset( $wgGoogleSiteSearchCharset ) ) {
-	$wgGoogleSiteSearchCharset = 'UTF-8';
+if ( !isset( $wgGoogleSiteSearchAttributes ) ) {
+	$wgGoogleSiteSearchAttributes = [];
 }
 
 # Define internationalizations
