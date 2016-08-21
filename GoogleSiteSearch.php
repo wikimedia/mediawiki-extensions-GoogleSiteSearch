@@ -24,23 +24,28 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-# Not a valid entry point, skip unless MEDIAWIKI is defined
-if ( !defined( 'MEDIAWIKI' ) ) {
-	echo <<<EOT
-To install my extension, put the following line in LocalSettings.php:
-require_once( "$IP/extensions/GoogleSiteSearch/GoogleSiteSearch.php" );
-EOT;
-	exit( 1 );
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'GoogleSiteSearch' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['GoogleSiteSearch'] = __DIR__ . '/i18n';
+	wfWarn(
+		'Deprecated PHP entry point used for GoogleSiteSearch extension. ' .
+		'Please use wfLoadExtension instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	);
+	return;
 }
 
-$wgExtensionCredits['specialpage'][] = array(
+$extensionJsonFilename = dirname( __FILE__ ) . '/extension.json';
+$extensionJsonData = FormatJson::decode( file_get_contents( $extensionJsonFilename ), true );
+$wgExtensionCredits[$extensionJsonData['type']][] = array(
 	'path' => __FILE__,
-	'name' => 'GoogleSiteSearch',
-	'author' => 'Ryan Finnie',
-	'url' => 'https://www.mediawiki.org/wiki/Extension:GoogleSiteSearch',
-	'descriptionmsg' => 'googlesitesearch-desc',
-	'version' => '2.2',
-	'license-name' => 'GPL-2.0+',
+	'name' => $extensionJsonData['name'],
+	'author' => $extensionJsonData['author'],
+	'url' => $extensionJsonData['url'],
+	'descriptionmsg' => $extensionJsonData['descriptionmsg'],
+	'version' => $extensionJsonData['version'],
+	'license-name' => $extensionJsonData['license-name'],
 );
 
 # Default configuration globals
@@ -50,59 +55,15 @@ if ( !isset( $wgGoogleSiteSearchCSEID ) ) {
 if ( !isset( $wgGoogleSiteSearchOnly ) ) {
 	$wgGoogleSiteSearchOnly = false;
 }
-if ( !isset( $wgGoogleSiteSearchCharset ) ) {
-	$wgGoogleSiteSearchCharset = 'UTF-8';
+if ( !isset( $wgGoogleSiteSearchAttributes ) ) {
+	$wgGoogleSiteSearchAttributes = [];
 }
-
-$dir = dirname( __FILE__ ) . '/';
 
 # Define internationalizations
 $wgMessagesDirs['GoogleSiteSearch'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['GoogleSiteSearch'] = $dir . 'GoogleSiteSearch.i18n.php';
 
-# Hook into SpecialSearchResultsPrepend (MW 1.21+)
-$wgHooks['SpecialSearchResultsPrepend'][] = 'GoogleSiteSearch';
+# Define extension hooks
+$wgAutoloadClasses['GoogleSiteSearch'] = __DIR__ . '/GoogleSiteSearch.hooks.php';
 
-function GoogleSiteSearch( $t, $out, $term ) {
-	global $wgGoogleSiteSearchCSEID;
-	global $wgGoogleSiteSearchOnly;
-	global $wgGoogleSiteSearchCharset;
-
-	# Return immediately if the CSE ID is not configured
-	if ( !$wgGoogleSiteSearchCSEID ) {
-		return true;
-	}
-
-	# Return immediately if no search term was supplied
-	if ( !$term ) {
-		return true;
-	}
-
-	$dir = dirname( __FILE__ ) . '/';
-	$lang = $t->getLanguage();
-
-	# Allow for local overrides of the base HTML
-	if ( file_exists( $dir . 'GoogleSiteSearch.content.html' ) ) {
-		$outhtml = file_get_contents ( $dir . 'GoogleSiteSearch.content.html' );
-	} else {
-		$outhtml = file_get_contents ( $dir . 'GoogleSiteSearch.content.default.html' );
-	}
-
-	# Replace variable data in the HTML
-	$outhtml = str_replace( '_GSS_CSE_ID_', FormatJson::encode( $wgGoogleSiteSearchCSEID ), $outhtml );
-	$outhtml = str_replace( '_GSS_TERM_ESCAPE_', FormatJson::encode( $term ), $outhtml );
-	$outhtml = str_replace( '_GSS_LANG_', FormatJson::encode( $lang->getCode() ), $outhtml );
-	$outhtml = str_replace( '_GSS_LOADING_', htmlentities( wfMessage( 'googlesitesearch-loading', $wgGoogleSiteSearchCharset ) ), $outhtml );
-
-	# Add it!
-	$out->addWikiText( '== ' . wfMessage( 'googlesitesearch-google-results' ) . ' ==' );
-	$out->AddHTML( $outhtml );
-
-	# Do not return wiki results if configured that way
-	if ( $wgGoogleSiteSearchOnly ) {
-		return false;
-	} else {
-		$out->addWikiText( '== ' . wfMessage( 'googlesitesearch-wiki-results' ) . ' ==' );
-		return true;
-	}
-}
+# Hook into SpecialSearchResultsPrepend
+$wgHooks['SpecialSearchResultsPrepend'][] = 'GoogleSiteSearch::searchPrepend';
