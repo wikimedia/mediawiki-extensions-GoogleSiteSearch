@@ -1,6 +1,6 @@
 {
 	"name": "GoogleSiteSearch",
-	"version": "2.3dev",
+	"version": "3.0",
 	"author": "Ryan Finnie",
 	"url": "https://www.mediawiki.org/wiki/Extension:GoogleSiteSearch",
 	"descriptionmsg": "googlesitesearch-desc",
