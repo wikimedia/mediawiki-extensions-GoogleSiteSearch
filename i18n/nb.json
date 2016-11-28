@@ -1,4 +1,11 @@
 {
-	"@metadata": [],
-	"googlesitesearch-desc": "Legger til [//www.google.com/cse/manage/all Google CSE-sidesøk] i wikiens søkeresultater"
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"googlesitesearch-desc": "Legger til [//www.google.com/cse/manage/all Google CSE-sidesøk] i wikiens søkeresultater",
+	"googlesitesearch-loading": "Laster ...",
+	"googlesitesearch-google-results": "Google sideresultater",
+	"googlesitesearch-wiki-results": "Wikiresultater"
 }
