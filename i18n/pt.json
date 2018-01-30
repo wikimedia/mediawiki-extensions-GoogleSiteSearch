@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Vitorvicentevalente",
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Athena in Wonderland"
 		]
 	},
-	"googlesitesearch-desc": "Acrescenta os resultados da [//www.google.com/cse/manage/all pesquisa por site Google CSE] aos resultados de pesquisas na wiki",
+	"googlesitesearch-desc": "Acrescenta os resultados da [//www.google.com/cse/manage/all pesquisa por sítio Google CSE] aos resultados de pesquisas na wiki",
 	"googlesitesearch-loading": "A carregar...",
 	"googlesitesearch-google-results": "Resultados da pesquisa Google",
 	"googlesitesearch-wiki-results": "Resultados da wiki"
