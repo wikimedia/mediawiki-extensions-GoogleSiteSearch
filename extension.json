@@ -4,7 +4,7 @@
 	"author": "Ryan Finnie",
 	"url": "https://www.mediawiki.org/wiki/Extension:GoogleSiteSearch",
 	"descriptionmsg": "googlesitesearch-desc",
-	"license-name": "GPL-2.0+",
+	"license-name": "GPL-2.0-or-later",
 	"type": "specialpage",
 	"MessagesDirs": {
 		"GoogleSiteSearch": [
