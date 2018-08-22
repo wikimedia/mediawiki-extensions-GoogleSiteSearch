@@ -1,6 +1,13 @@
 <?php
 class GoogleSiteSearch {
 
+	/**
+	 * @param SpecialSearch $specialSearch
+	 * @param OutputPage $output
+	 * @param string $term
+	 *
+	 * @return bool
+	 */
 	public static function searchPrepend( $specialSearch, $output, $term ) {
 		global $wgGoogleSiteSearchCSEID;
 		global $wgGoogleSiteSearchOnly;
@@ -39,21 +46,21 @@ class GoogleSiteSearch {
 
 		$html = Html::rawElement( 'div', array( 'id' => 'mw-googlesitesearch-container' ),
 			Html::element( 'script', array(), 'var mwGSSCallback = function() { google.search.cse.element.getElement(' . FormatJson::encode( $gcseAttributes['gname'] ) . ').execute(' . FormatJson::encode( $term ) . '); }; window.__gcse = { callback: mwGSSCallback }; (function() { var gcse = document.createElement("script"); gcse.type = "text/javascript"; gcse.async = true; gcse.src = "https://cse.google.com/cse.js?cx=" + ' . FormatJson::encode( $wgGoogleSiteSearchCSEID ) . '; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(gcse, s); })();' )
-			. Html::Element( 'div', $gcseAttributesDiv, wfMessage( 'googlesitesearch-loading' ) )
+			. Html::element( 'div', $gcseAttributesDiv, wfMessage( 'googlesitesearch-loading' )->text() )
 		);
 
 		# Allow hook override of HTML
 		Hooks::run( 'GoogleSiteSearchHTML', [ $specialSearch, $term, &$html ] );
 
 		# Add it!
-		$output->addWikiText( '== ' . wfMessage( 'googlesitesearch-google-results' ) . ' ==' );
-		$output->AddHTML( $html );
+		$output->addWikiText( '== ' . wfMessage( 'googlesitesearch-google-results' )->text() . ' ==' );
+		$output->addHtml( $html );
 
 		# Do not return wiki results if configured that way
 		if ( $wgGoogleSiteSearchOnly ) {
 			return false;
 		} else {
-			$output->addWikiText( '== ' . wfMessage( 'googlesitesearch-wiki-results' ) . ' ==' );
+			$output->addWikiText( '== ' . wfMessage( 'googlesitesearch-wiki-results' )->text() . ' ==' );
 			return true;
 		}
 	}
