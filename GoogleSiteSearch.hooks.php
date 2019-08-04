@@ -53,14 +53,14 @@ class GoogleSiteSearch {
 		Hooks::run( 'GoogleSiteSearchHTML', [ $specialSearch, $term, &$html ] );
 
 		# Add it!
-		$output->addWikiText( '== ' . wfMessage( 'googlesitesearch-google-results' )->text() . ' ==' );
+		$output->addWikiTextAsInterface( '== ' . wfMessage( 'googlesitesearch-google-results' )->text() . ' ==' );
 		$output->addHtml( $html );
 
 		# Do not return wiki results if configured that way
 		if ( $wgGoogleSiteSearchOnly ) {
 			return false;
 		} else {
-			$output->addWikiText( '== ' . wfMessage( 'googlesitesearch-wiki-results' )->text() . ' ==' );
+			$output->addWikiTextAsInterface( '== ' . wfMessage( 'googlesitesearch-wiki-results' )->text() . ' ==' );
 			return true;
 		}
 	}
