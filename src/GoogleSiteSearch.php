@@ -5,7 +5,6 @@ class GoogleSiteSearch {
 	 * @param SpecialSearch $specialSearch
 	 * @param OutputPage $output
 	 * @param string $term
-	 *
 	 * @return bool
 	 */
 	public static function searchPrepend( $specialSearch, $output, $term ) {
@@ -24,28 +23,28 @@ class GoogleSiteSearch {
 		}
 
 		# Default attributes, may be overridden by $wgGoogleSiteSearchAttributes.
-		$gcseAttributesDefault = array(
+		$gcseAttributesDefault = [
 			'gname' => 'mw-googlesitesearch',
 			'linkTarget' => '',
-		);
+		];
 
 		# Attributes which may not be overridden.
-		$gcseAttributesImmutable = array(
+		$gcseAttributesImmutable = [
 			'autoSearchOnLoad' => 'false',
-		);
+		];
 
 		$gcseAttributes = array_merge( $gcseAttributesDefault, $wgGoogleSiteSearchAttributes, $gcseAttributesImmutable );
 
 		# Generate HTML5-compatible <div> attributes.
-		$gcseAttributesDiv = array();
+		$gcseAttributesDiv = [];
 		foreach ( $gcseAttributes as $key => $value ) {
 			$gcseAttributesDiv['data-' . $key] = $value;
 		}
 		$gcseAttributesDiv['id'] = $gcseAttributes['gname'];
 		$gcseAttributesDiv['class'] = 'gcse-searchresults-only';
 
-		$html = Html::rawElement( 'div', array( 'id' => 'mw-googlesitesearch-container' ),
-			Html::element( 'script', array(), 'var mwGSSCallback = function() { google.search.cse.element.getElement(' . FormatJson::encode( $gcseAttributes['gname'] ) . ').execute(' . FormatJson::encode( $term ) . '); }; window.__gcse = { callback: mwGSSCallback }; (function() { var gcse = document.createElement("script"); gcse.type = "text/javascript"; gcse.async = true; gcse.src = "https://cse.google.com/cse.js?cx=" + ' . FormatJson::encode( $wgGoogleSiteSearchCSEID ) . '; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(gcse, s); })();' )
+		$html = Html::rawElement( 'div', [ 'id' => 'mw-googlesitesearch-container' ],
+			Html::element( 'script', [], 'var mwGSSCallback = function() { google.search.cse.element.getElement(' . FormatJson::encode( $gcseAttributes['gname'] ) . ').execute(' . FormatJson::encode( $term ) . '); }; window.__gcse = { callback: mwGSSCallback }; (function() { var gcse = document.createElement("script"); gcse.type = "text/javascript"; gcse.async = true; gcse.src = "https://cse.google.com/cse.js?cx=" + ' . FormatJson::encode( $wgGoogleSiteSearchCSEID ) . '; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(gcse, s); })();' )
 			. Html::element( 'div', $gcseAttributesDiv, wfMessage( 'googlesitesearch-loading' )->text() )
 		);
 

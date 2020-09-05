@@ -12,7 +12,7 @@
 		]
 	},
 	"AutoloadClasses": {
-		"GoogleSiteSearch": "GoogleSiteSearch.hooks.php"
+		"GoogleSiteSearch": "src/GoogleSiteSearch.php"
 	},
 	"Hooks": {
 		"SpecialSearchResultsPrepend": "GoogleSiteSearch::searchPrepend"
