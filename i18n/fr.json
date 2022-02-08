@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Gomoko"
+			"Gomoko",
+			"Verdy p"
 		]
 	},
 	"googlesitesearch-desc": "Ajoute [//www.google.com/cse/manage/all la recherche de site CSE de Google] aux résultats de la recherche du wiki",
-	"googlesitesearch-loading": "Chargement…",
+	"googlesitesearch-loading": "Chargement en cours...",
 	"googlesitesearch-google-results": "Résultats du site de Google",
 	"googlesitesearch-wiki-results": "Résultats du wiki"
 }
