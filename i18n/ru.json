@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Okras"
+			"Okras",
+			"Pacha Tchernof"
 		]
 	},
 	"googlesitesearch-desc": "Добавляет [//www.google.com/cse/manage/al Пользовательский поиск Google] к результатам поиска движка проекта",
-	"googlesitesearch-loading": "Загрузка…",
+	"googlesitesearch-loading": "Загружается…",
 	"googlesitesearch-google-results": "Результаты поиска Google",
 	"googlesitesearch-wiki-results": "Результаты вики-поиска"
 }
