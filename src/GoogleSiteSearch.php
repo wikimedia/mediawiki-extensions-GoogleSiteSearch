@@ -1,4 +1,5 @@
 <?php
+
 class GoogleSiteSearch {
 
 	/**
@@ -8,8 +9,52 @@ class GoogleSiteSearch {
 	 * @return bool
 	 */
 	public static function searchPrepend( $specialSearch, $output, $term ) {
-		global $wgGoogleSiteSearchCSEID;
+		global $wgGoogleSiteSearchAppend;
 		global $wgGoogleSiteSearchOnly;
+
+		# Return immediately if results should be appended
+		if ( $wgGoogleSiteSearchAppend && !$wgGoogleSiteSearchOnly ) {
+			return true;
+		}
+
+		# Add results
+		self::searchAdd( $specialSearch, $output, $term );
+
+		# Do not return wiki results if configured that way
+		if ( $wgGoogleSiteSearchOnly ) {
+			return false;
+		}
+
+		# Prepend wiki results with a title
+		$output->addWikiTextAsInterface( '== ' . wfMessage( 'googlesitesearch-wiki-results' )->text() . ' ==' );
+	}
+
+	/**
+	 * @param SpecialSearch $specialSearch
+	 * @param OutputPage $output
+	 * @param string $term
+	 * @return bool
+	 */
+	public static function searchAppend( $specialSearch, $output, $term ) {
+		global $wgGoogleSiteSearchAppend;
+
+		# Return immediately if results were prepended
+		if ( !$wgGoogleSiteSearchAppend ) {
+			return true;
+		}
+
+		# Add results
+		self::searchAdd( $specialSearch, $output, $term );
+	}
+
+	/**
+	 * @param SpecialSearch $specialSearch
+	 * @param OutputPage $output
+	 * @param string $term
+	 * @return bool
+	 */
+	public static function searchAdd( $specialSearch, $output, $term ) {
+		global $wgGoogleSiteSearchCSEID;
 		global $wgGoogleSiteSearchAttributes;
 
 		# Return immediately if the CSE ID is not configured
@@ -54,14 +99,5 @@ class GoogleSiteSearch {
 		# Add it!
 		$output->addWikiTextAsInterface( '== ' . wfMessage( 'googlesitesearch-google-results' )->text() . ' ==' );
 		$output->addHtml( $html );
-
-		# Do not return wiki results if configured that way
-		if ( $wgGoogleSiteSearchOnly ) {
-			return false;
-		} else {
-			$output->addWikiTextAsInterface( '== ' . wfMessage( 'googlesitesearch-wiki-results' )->text() . ' ==' );
-			return true;
-		}
 	}
-
 }

@@ -1,6 +1,6 @@
 {
 	"name": "GoogleSiteSearch",
-	"version": "3.0",
+	"version": "3.1",
 	"author": "Ryan Finnie",
 	"url": "https://www.mediawiki.org/wiki/Extension:GoogleSiteSearch",
 	"descriptionmsg": "googlesitesearch-desc",
@@ -15,11 +15,13 @@
 		"GoogleSiteSearch": "src/GoogleSiteSearch.php"
 	},
 	"Hooks": {
-		"SpecialSearchResultsPrepend": "GoogleSiteSearch::searchPrepend"
+		"SpecialSearchResultsPrepend": "GoogleSiteSearch::searchPrepend",
+		"SpecialSearchResultsAppend": "GoogleSiteSearch::searchAppend"
 	},
 	"config": {
 		"GoogleSiteSearchCSEID": "",
 		"GoogleSiteSearchOnly": false,
+		"GoogleSiteSearchAppend": false,
 		"GoogleSiteSearchAttributes": []
 	},
 	"requires": {
