@@ -4,5 +4,8 @@
 			"Eleassar"
 		]
 	},
-	"googlesitesearch-loading": "Nalaganje ..."
+	"googlesitesearch-desc": "V viki zadetke iskanja doda [//www.google.com/cse/manage/all iskanje z uporabniškim (CSE) Googlovim iskalnikom]",
+	"googlesitesearch-loading": "Nalaganje ...",
+	"googlesitesearch-google-results": "Zadetki Googlovega spletišča",
+	"googlesitesearch-wiki-results": "Viki zadetki"
 }
