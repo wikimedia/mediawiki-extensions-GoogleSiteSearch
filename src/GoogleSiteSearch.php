@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 class GoogleSiteSearch {
 
 	/**
@@ -94,7 +96,7 @@ class GoogleSiteSearch {
 		);
 
 		# Allow hook override of HTML
-		Hooks::run( 'GoogleSiteSearchHTML', [ $specialSearch, $term, &$html ] );
+		MediaWikiServices::getInstance()->getHookContainer()->run( 'GoogleSiteSearchHTML', [ $specialSearch, $term, &$html ] );
 
 		# Add it!
 		$output->addWikiTextAsInterface( '== ' . wfMessage( 'googlesitesearch-google-results' )->text() . ' ==' );
