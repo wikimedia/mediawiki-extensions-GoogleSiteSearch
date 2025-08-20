@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
+	"googlesitesearch-desc": "د ويکي لټون پايلو ته [//www.google.com/cse/manage/all د گوگل سي‌اېس‌اي وېبځي لټون] ورگډوي",
 	"googlesitesearch-loading": "رابرسېرېږي...",
 	"googlesitesearch-google-results": "د گووگل وېبځي پايلې",
 	"googlesitesearch-wiki-results": "ويکي پايلې"
